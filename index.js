@@ -2,6 +2,8 @@ console.log('🏊 ❤  ');
 const token = 'c86b2ed';
 const apiRequests = `http://www.omdbapi.com/?apikey=${token}&`;
 const userInput = document.querySelector('input');
+const userToken = document.querySelector('input.API');
+console.log(userToken);
 const btn = document.querySelector('button');
 const infoToUser = document.querySelector('.data-container');
 

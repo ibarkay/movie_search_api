@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Movie API 🎥 </title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <div class="container">
-    <h1>🎥  Wellcome to search Movie API 🎥</h1>
-    <input type="text" placeholder="Movie name">
-    <button>Search</button>
-    <button type="button" onclick="runSpeechRecognition()">🔈  Speech to Text</button> &nbsp; <span id="action"></span>
-        <div id="output" class="hide"></div>
-  </div>
-  <div class="data-container"></div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Movie API 🎥</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>🎥 Wellcome to search Movie API 🎥</h1>
+			<!-- TODO : make input for API -->
+			<input type="text" placeholder="Movie name" />
+      <input type="text" class="API" placeholder="put your API token here : example -> c86b2ed">
+			<button>Search</button>
+			<button type="button" onclick="runSpeechRecognition()">
+				🔈 Speech to Text
+			</button>
+			&nbsp; <span id="action"></span>
+			<div id="output" class="hide"></div>
+		</div>
+		<div class="data-container"></div>
 
-
-
-
-  <script src="./index.js"></script>
-  <script src="./voice.js"></script>
-</body>
+		<script src="./index.js"></script>
+		<script src="./voice.js"></script>
+	</body>
 </html>
